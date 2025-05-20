@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+
+    header {
+      background: rgba(106, 17, 203, 0.9);
+      color: #fff;
+      padding: 1.5rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 4rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(26, 26, 26, 0.9);
+      color: #fff;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      color: #6a11cb;
+      text-decoration: underline;
+    }
+
+    a {
+      color: #2575fc;
+    }
+
+    a:hover {
+      color: #6a11cb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Chalasani Deekshitha</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h2>Hello, I'm Chalasani Deekshitha</h2>
+    <p>A Full Stack Developer</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a B.Tech degree. I have a strong passion for full stack development and enjoy building responsive, user-friendly web applications.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React.js</div>
+      <div class="card">Node.js</div>
+      <div class="card">Express.js</div>
+      <div class="card">MongoDB</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>My Work</h2>
+    <div class="grid">
+      <div class="card">Full Stack Project: Task Manager</div>
+      <div class="card">E-Commerce Website</div>
+      <div class="card">Personal Blog with Admin Panel</div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" download><p>Click below to download ↓</p><li><a href="resume.html">Resume</a></li></a></p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:deekshitha@example.com">deekshitha@example.com</a></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/deekshitha" target="_blank">LinkedIn</a>
+      <a href="https://github.com/deekshitha" target="_blank">GitHub</a>
+      <a href="https://twitter.com/deekshitha" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chalasani Deekshitha. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
